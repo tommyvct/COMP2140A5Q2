@@ -1,6 +1,15 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+/**
+ * Compiling Search Results in a Heap. <p>
+ * Main class for Assignment 5, Question 2.
+ * This class read 2 hotel lists, put them into a heap,
+ * print top 5 cheap hotels from both lists, and merge them into another heap,
+ * then print top 10 cheap hotels from the big heap.
+ * 
+ * @author Tommy Wu (7852291)
+ */
 public class WuTommyA5Q2
 {
     public static void main(String[] args)
@@ -87,12 +96,24 @@ public class WuTommyA5Q2
     }
 }
 
+/**
+ * Data Structure for {@code HotelRoom}
+ * 
+ * @author Tommy Wu (7852291)
+ */
 class HotelRoom
 {
     private String name;
     private double price;
     private double distance;
 
+    /**
+     * Constructor for {@code HotelRoom} data Structure 
+     * 
+     * @param newName name of hotel
+     * @param newPrice price for one night
+     * @param newDistance distance from search address
+     */
     public HotelRoom(String newName, double newPrice, double newDistance)
     {
         this.name = newName;
@@ -100,33 +121,40 @@ class HotelRoom
         this.distance = newDistance;
     }
 
-
+    /**
+     * Getter for price
+     * 
+     * @return the price of this hotel
+     */
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
+    /**
+     * Getter for distance
+     * 
+     * @return the distance of this hotel from search address
+     */
     public double getDistance() {
         return distance;
     }
 
-    public void setDistance(double distance) {
-        this.distance = distance;
-    }
-
+    /**
+     * Getter for name
+     * 
+     * @return the name of this hotel
+     */
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }
 
-
+/**
+ * ArrayList of {@code HotelRoom}
+ * 
+ * @author Tommy Wu (7852291)
+ */
 class HotelRoomArrayList
 {
     private HotelRoom[] arr;
@@ -290,11 +318,16 @@ class HotelRoomArrayList
 }
 
 /**
- * Ascending Heap class.
+ * Ascending Heap class. <p>
  *
- * Why ascending: not hard to modify from descending version from book, easier to access
+ * Why ascending: 
+ * <ul>
+ *     <li>not hard to modify from descending version from book</li> 
+ *     <li>easier to access</li>
+ * </ul>
+ * 
+ * @author Tommy Wu (7852291)
  */
-@SuppressWarnings("CanBeFinal")
 class Heap
 {
     private HotelRoomArrayList list;

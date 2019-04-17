@@ -1,0 +1,14 @@
+Hidden Gorge Hotel, 220.00, 4.7
+Imperial Resort, 239.99, 6.9
+Summit Hotel, 189.99, 13.2
+Sierra Resort, 280.00, 9.0
+Canyon Overlook Hotel, 245.50, 5.5
+Comfort B&B, 150.00, 8.9
+Tropical Vista Motel, 64.99, 14.2
+Expedition Resort, 299.99, 9.7
+Diamond Hotel, 329.99, 3.8
+Downtown Livin Motel, 89.99, 3.4
+Quiet Forest Hotel, 146.87, 6.1
+Voyager Resort, 290.00, 8.0
+White River Motel, 159.50, 4.9
+Seaside Resort, 279.99, 7.6
